@@ -1,0 +1,27 @@
+export const Const = {
+    circles : [{className: 'circle_01', color: 'white'},
+                {className: 'circle_02', color: 'blue'},
+                {className: 'circle_03', color: 'red'},
+                {className: 'circle_04', color: 'pink'},
+                {className: 'circle_05', color: 'yellow'},
+                {className: 'circle_06', color: 'black'},
+                {className: 'circle_07', color: 'red'},
+                {className: 'circle_08', color: 'green'},
+                {className: 'circle_09', color: 'skyblue'},
+                {className: 'circle_10', color: 'tomato'},
+                {className: 'circle_11', color: 'lime'},
+                {className: 'circle_12', color: 'yellow'},
+                {className: 'circle_13', color: 'pinke'},
+                {className: 'circle_14', color: 'blue'},
+                {className: 'circle_15', color: 'black'},
+                {className: 'circle_16', color: 'yellow'},
+                {className: 'circle_17', color: 'green'},
+                {className: 'circle_18', color: 'orange'},
+                {className: 'circle_19', color: 'navy'},
+                {className: 'circle_20', color: 'yellow'},
+                {className: 'circle_21', color: 'pink'},
+                {className: 'circle_22', color: 'red'},
+                {className: 'circle_23', color: 'blue'},
+
+                ]
+    }

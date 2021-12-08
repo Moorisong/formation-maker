@@ -1,0 +1,10 @@
+.wrapper{
+    background-color: tomato;
+    width: 45%;
+    height: 650px;
+}
+.content{
+    background-color: gray;
+    width: 90%;
+    height: 93%;
+}
