@@ -1,15 +1,21 @@
 .wrapper{
-    background-color: black;
+    background-color: rgb(90, 90, 90);
     width: 28%;
-    height: 650px;
+    height: 590px;
 }
 .dragZone{
-    background-color: lightgrey;
+    background-color: rgb(166, 200, 240);
     width: 94%;
-    height: 93%;
+    height: 95%;
     position: relative;
-    top: 2rem;
+    top: 1.5rem;
+    left: 1rem;
 }
 .dragZone > ul > li {
-    width: 4rem;
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+}
+.district_01 > li{
+    display: inline-block;
 }

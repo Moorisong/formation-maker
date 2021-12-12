@@ -6,7 +6,6 @@ import Draggable from 'react-draggable'
 
 
 export default function Board(){
-    const circleInfoObj = Const.district
     const nodeRef = useRef(null)
 
     const onStart = (e) => {
@@ -15,17 +14,20 @@ export default function Board(){
     const onStop = (e) => {
         e.target.style.opacity = "1"
     }
+    const onDrag = (e) => {
+        console.log('on Drag');
+    }
 
     return(
         <>
-            <div className={styles.wrapper}>
+             <div className={styles.wrapper}>
                 <div className={styles.dragZone}>
-                        <ul>
-                            {circleInfoObj.map((ele) => <Draggable onStart={onStart} onStop={onStop} nodeRef={nodeRef} key={ele.districtName}><li className= {ele.districtName} ref={nodeRef} ><Circles color={ele.color} /></li></Draggable>)}
+                        <ul className={styles.district_01}>
+                            {Const.district_01.map((ele) => <Draggable nodeRef={nodeRef} positionOffset={{x:18, y:10}} onStart={onStart} onStop={onStop} key={ele.districtName}><li ref={nodeRef} className= {ele.districtName}><Circles color={ele.color} /></li></Draggable>)}
                         </ul>
                 </div>
-
             </div>
+            
         </>
     )
 }

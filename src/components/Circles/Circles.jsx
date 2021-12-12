@@ -1,10 +1,13 @@
 import styles from './Circles.module.css'
+import { Fab } from '@mui/material'
 
 export default function Circles({color, opacity}){
     const colorName = color
     return(
         <>
-            <div className={styles.circle} style={{backgroundColor:colorName}}></div>
+            <Fab size="small" aria-label="add" color="primary">
+                <div className={styles.circle}></div>
+            </Fab>
         </>
     )
 }
