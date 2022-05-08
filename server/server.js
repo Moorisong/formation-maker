@@ -8,15 +8,15 @@ app.use(cors())
 app.use('/', api)
 
 app.listen(3001, () => {
-  console.log('3001에 연결됨')
+  console.log('connected port:3001')
   mongoose
     .connect(
       'mongodb+srv://ksh:ksh@songcluster.hgpfq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
     )
     .then(() => {
-      console.log('몽구스 연결 성공!!')
+      console.log('mongoDB connected!')
     })
     .catch(err => {
-      console.log('에러발생 -->', err)
+      console.log('error--->', err)
     })
 })
